@@ -14,7 +14,8 @@
   box-shadow: 1px 1px 5px black;
   background-color: rgb(244, 236, 222);
 }
-.loading {
+.loading,
+.empty {
   font-size: 50px;
   font-weight: 600;
   position: absolute;

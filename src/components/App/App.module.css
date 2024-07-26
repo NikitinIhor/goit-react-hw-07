@@ -3,6 +3,7 @@
   padding: 15px;
 }
 .title {
+  color: rgb(135, 135, 244);
   font-size: 30px;
   text-shadow: 2px 2px 4px rgb(124, 124, 124);
   letter-spacing: 0.05em;

@@ -27,16 +27,14 @@ export default function ContactList() {
         Something went wrong...Please reload the page :(
       </p>
     );
+  if (contactsList.length === 0)
+    return <p className={css.empty}>--No contacts--</p>;
 
   return (
     <ul className={css.list}>
       {contactsList.map((contact) => (
         <li className={css.item} key={contact.id}>
-          {contactsList.length > 0 ? (
-            <Contact data={contact} />
-          ) : (
-            <p>--No contacts--</p>
-          )}
+          <Contact data={contact} />
         </li>
       ))}
     </ul>
