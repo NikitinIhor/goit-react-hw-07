@@ -16,7 +16,7 @@ export const fetchContacts = createAsyncThunk("contacts/getAll",
 export const addNewContact = createAsyncThunk("contacts/addNew",
     async (newContact, thunkAPI) => {
         try {
-            const res = await axios.post("/contacts", newContact)
+            const res = await axios.post(`/contacts`, newContact)
             return res.data
         } catch (error) {
             return thunkAPI.rejectWithValue(error.message)
