@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { fetchContacts } from "../../contacts_api";
+import { fetchContacts } from "../../redux/contactsOps";
 import { useEffect } from "react";
 import {
   onfiltredContacts,
